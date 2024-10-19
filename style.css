@@ -50,6 +50,10 @@
   #root, #__next {
     isolation: isolate;
   }
+
+p {
+  font-size: max(40%,2vh);
+}
 .container {
     display: grid;
     grid-template-columns: 0.7fr 3fr;
@@ -58,33 +62,46 @@
 }
 .sidebar {
     display: grid;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 300px;
     grid-column: 1;
-    place-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10,1fr);
-    padding: 20px;
-    background-color: rgb(167, 167, 255);
-    
-    column-gap: 10px;
+    place-items: start;
+    grid-template-rows: auto;
+    background-color: #fbcfe8;
 }
 .dashboard {
-    justify-self: start;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  place-content: center;
+  place-items: center;
+  font-size: 50px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 30px;
 }
-.dashboard, #dash-logo {
-    margin-bottom: 30px;
-}
-
 #dash-logo {
-    grid-column: 1;
-    grid-row: 1;
-    height: 7vh;
-    justify-self: center;
+  max-height: 70px;
+  max-width: 70px;
+
+  min-height: 40px;
+  min-width: 40px;
 }
-.side-text, .side-text2 {
-    justify-self: start;
-    font-size: max(50%,10px);
+.side-text {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-items: start;
 }
 #house {
-    height: 20px;
-    width: 20px;
+  max-height: 20px;
+  max-width: 20px;
+}
+.break_line {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  justify-items: start;
+  margin-bottom: 50px;
 }
