@@ -149,11 +149,11 @@ input {
   justify-self: end;
 }
 #bell {
-  max-height:25px ;
-  max-width: 25px;
+  max-height:20px ;
+  max-width: 20px;
 
-  min-height: 12px;
-  min-width: 12px;
+  min-height: 7px;
+  min-width: 7px;
 }
 #cool-logo {
   justify-self: start;
@@ -167,6 +167,14 @@ input {
   font-size: max(20%,15px);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #7e22ce;
+  width: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px #7e22ce;
+}
+.name:hover {
+  background-color: #7e22ce;
+  transition: 1s;
 }
 
 /*second row of the header*/
