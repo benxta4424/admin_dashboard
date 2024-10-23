@@ -238,9 +238,10 @@ button:hover {
   display: grid;
   grid-column: 2;
   grid-row: 2;
+  padding-left: 10px;
+  padding-bottom: 20px;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 7fr;
-  margin-bottom: 20px;
 
 }
 .project-announcements {
@@ -267,6 +268,7 @@ button:hover {
 }
 
 .small-boxes {
+  position: relative;
   display: grid;
   grid-template-columns:1fr;
   grid-template-rows: 1fr 8fr;
@@ -282,7 +284,7 @@ button:hover {
 .small-boxes:hover {
   background-color: #6b21a8;
   color: white;
-  transition: 1s;
+  transition: 800ms;
 }
 .title
 {
@@ -293,4 +295,20 @@ button:hover {
 .text {
   margin-left: 10px;
   font-size: 75%;
+}
+.logos {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid red;
+}
+#logo {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
 }
