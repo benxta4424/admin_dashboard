@@ -176,6 +176,7 @@ input {
 }
 .name:hover {
   background-color: #7e22ce;
+  box-shadow: 5px 10px 10px white;
   transition: 1s;
 }
 
@@ -218,6 +219,7 @@ input {
 }
 .buttons, .button1, .button3 {
   align-items: center;
+  cursor: pointer;
   border:2px solid #86198f;
   background-color: #d8b4fe;
   border-radius: 20px;
@@ -318,9 +320,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 700px;
+  max-height: 900px;
   max-width: 300px;
-  border: 3px solid red;
 }
 .announcements {
   display: flex;
@@ -331,7 +332,7 @@ button:hover {
   border-radius: 5px;
   max-height: 360px;
   max-width: 200px;
-  box-shadow: 1px 1px 10px grey;
+  box-shadow: 1px 1px 10px #ddd6fe;
 
 }
 .smaller-boxes {
@@ -352,5 +353,66 @@ button:hover {
 }
 .atext {
   padding-bottom: 15px;
-  box-shadow: 0px 1px 0px black;
+  box-shadow: 0px 1px 0px #ddd6fe;
+}
+.trending{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows:repeat(5,auto);
+
+  border-radius: 20px;
+  height: 250px;
+  background-color: white;
+  box-shadow: 1px 0px 10px red;
+}
+.trending-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-style:oblique;
+}
+#animal-logo {
+  padding-left: 10px;
+  max-height: 50px;
+  max-width: 50px;
+}
+.first-logo {
+  grid-column: 1;
+  grid-row: 2;
+}
+.second-logo {
+  grid-column: 1;
+  grid-row: 3;
+}
+.third-logo {
+  grid-column: 1;
+  grid-row: 4;
+}
+.fourth-logo {
+  grid-column: 1;
+  grid-row: 5;
+}
+.first-person {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  grid-row: 2;
+}
+.third-person {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  grid-row: 3;
+}
+.second-person {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  grid-row: 4;
+}
+.fourth-person {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  grid-row: 5;
 }
