@@ -228,3 +228,64 @@ button:hover {
   background-color: #7e22ce;
   color: #d8b4fe;
 }
+
+/*content*/
+.content {
+  background-color: #f1f5f9;
+  overflow: auto;
+  display: grid;
+  grid-column: 2;
+  grid-row: 2;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 7fr;
+}
+.project-announcements {
+  display: flex;
+  grid-column: 1/span 2;
+  grid-row: 1;
+  max-height: 40px;
+  justify-content: space-between;
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+}
+.content-section {
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+  gap: 10px;
+}
+
+.small-boxes {
+  display: grid;
+  grid-template-columns: 0.1fr 10fr;
+  grid-template-rows: 1fr 8fr;
+
+  background-color: white;
+  margin-left: 25px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px grey;
+}
+.title
+{
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 90%;
+  font-weight: 800;
+}
+.text {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 75%;
+}
+.color-boxes {
+  grid-column: 1;
+  grid-row: 1/span 2;
+
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: orange;
+}
