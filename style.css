@@ -50,7 +50,6 @@
   #root, #__next {
     isolation: isolate;
   }
-
 p {
   font-size: max(70%,2vh);
 }
@@ -132,7 +131,7 @@ input {
   grid-row: 1;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 120px;
-  box-shadow: 10px 1px 10px grey;
+  box-shadow: 10px 10px 10px #fcd34d;
 }
 /*first row of the header */
 .first-row {
@@ -238,6 +237,8 @@ button:hover {
   grid-row: 2;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 7fr;
+  margin-bottom: 20px;
+
 }
 .project-announcements {
   display: flex;
@@ -255,37 +256,35 @@ button:hover {
   grid-column: 1;
   grid-row: 2;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
-  gap: 10px;
+  grid-template-rows: repeat(auto-fit,170px);
 }
 
 .small-boxes {
   display: grid;
-  grid-template-columns: 0.1fr 10fr;
+  grid-column: 1;
+  grid-template-columns:1fr;
   grid-template-rows: 1fr 8fr;
 
+  height: 140px;
+  width: 270px;
   background-color: white;
   margin-left: 25px;
   border-radius: 10px;
   box-shadow: 1px 1px 4px grey;
+  border-left:7px solid #6b21a8;
+}
+.small-boxes:hover {
+  background-color: #6b21a8;
+  color: white;
+  transition: 1s;
 }
 .title
 {
-  grid-column: 2;
-  grid-row: 1;
+  margin-left: 10px;
   font-size: 90%;
   font-weight: 800;
 }
 .text {
-  grid-column: 2;
-  grid-row: 2;
+  margin-left: 10px;
   font-size: 75%;
-}
-.color-boxes {
-  grid-column: 1;
-  grid-row: 1/span 2;
-
-  box-sizing: border-box;
-  border-radius: 10px;
-  background-color: orange;
 }
