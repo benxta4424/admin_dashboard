@@ -255,21 +255,24 @@ button:hover {
   display: grid;
   grid-column: 1;
   grid-row: 2;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(auto-fit,170px);
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+
+  height: auto;
+  width: 100%;
+  gap: 10px;
+  padding: 10px;
 }
 
 .small-boxes {
   display: grid;
-  grid-column: 1;
   grid-template-columns:1fr;
   grid-template-rows: 1fr 8fr;
 
-  height: 140px;
-  width: 270px;
+  max-height: 190px;
+  width: 100%;
   background-color: white;
-  margin-left: 25px;
   border-radius: 10px;
+  padding: 10px;
   box-shadow: 1px 1px 4px grey;
   border-left:7px solid #6b21a8;
 }
